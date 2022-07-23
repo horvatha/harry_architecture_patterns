@@ -30,3 +30,6 @@ def allocate_endpoint():
         return {"message": str(e)}, 400
 
     return {"batchref": batchref}, 201
+
+
+app.run(debug=True, port=5005)
